@@ -66,10 +66,10 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td class="brut_val_sum">00 zt</td>
+                                        <td class="brut_val_sum font-bold">00 zt</td>
                                         <td></td>
                                         <td></td>
-                                        <td class="vat_tax_val_sum">00 zt</td>
+                                        <td class="vat_tax_val_sum font-bold">00 zt</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>

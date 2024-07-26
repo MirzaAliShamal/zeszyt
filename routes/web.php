@@ -28,8 +28,11 @@ Route::get('/', function () {
 
 Route::prefix('admin')->as('admin.')->middleware(['web', 'auth', 'admin'])->group(function () {
     Route::get('/operation-enter', [App\Http\Controllers\OperationEnterController::class, 'operationEnter'])->name('operation-enter');
+    
     Route::get('/operation-history', [App\Http\Controllers\OperationEnterController::class, 'operationHistory'])->name('operation-history');
     Route::post('/operation-enter-save', [App\Http\Controllers\OperationEnterController::class, 'operationEnterSave'])->name('operation-enter-save');
+
+    Route::get('/monthly-summary', [App\Http\Controllers\OperationEnterController::class, 'monthlySummary'])->name('monthly-summary');
 });
 
 Route::middleware('auth')->group(function () {

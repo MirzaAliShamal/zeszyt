@@ -14,6 +14,10 @@
                 <a href="{{ route('admin.operation-history') }}" class="nav-link"><i
                         data-feather="monitor"></i><span>Operation History</span></a>
             </li>
+            <li class="dropdown {{ Request::routeIs('admin.monthly-summary') ? 'active' : '' }}">
+                <a href="{{ route('admin.monthly-summary') }}" class="nav-link"><i
+                        data-feather="monitor"></i><span>Monthly Summary</span></a>
+            </li>
         </ul>
     </aside>
 </div>
