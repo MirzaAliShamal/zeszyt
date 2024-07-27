@@ -49,19 +49,17 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    @yield('script')
-
     <!-- General JS Scripts -->
     <script src="{{ asset('assets/js/app.min.js') }}"></script>
     <!-- JS Libraies -->
     <script src="{{ asset('assets/bundles/apexcharts/apexcharts.min.js') }}"></script>
-    <!-- Page Specific JS File -->
-    <script src="{{ asset('assets/js/page/chart-apexcharts.js') }}"></script>
-    <!-- Page Specific JS File -->
     <!-- Template JS File -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
     <!-- Custom JS File -->
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+
+    @yield('script')
+    
 </body>
 
 

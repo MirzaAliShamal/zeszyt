@@ -77,6 +77,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            {!! $operation_history->links() !!}
                         </div>
                     </div>
                 </div>
@@ -91,14 +92,14 @@
             $('.brut_val').each(function(index, element) {
                 brut_val_sum += $(this).text().split(' ')[0]
             });
-            $('.brut_val_sum').text(brut_val_sum + ' zt')
+            $('.brut_val_sum').text(brut_val_sum.toFixed(3) + ' zt')
 
             let vat_tax_val_sum = 0
             $('.vat_tax_val').each(function(index, element) {
                 vat_tax_val_sum += $(this).text().split(' ')[0]
             });
 
-            $('.vat_tax_val_sum').text(vat_tax_val_sum + ' zt')
+            $('.vat_tax_val_sum').text(vat_tax_val_sum.toFixed(3) + ' zt')
         });
     </script>
 @endsection

@@ -9,5 +9,5 @@ class OperationEnter extends Model
 {
     use HasFactory;
 
-    public $fillable = ['type', 'category', 'brut_value', 'vat_tax_percent', 'vat_tax_value', 'net_value', 'title', 'comment'];
+    public $fillable = ['type', 'category', 'brut_value','profit', 'vat_tax_percent', 'vat_tax_value', 'net_value', 'title', 'comment'];
 }

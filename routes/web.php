@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return redirect()->route('admin.operation-enter');
+    return redirect()->route('admin.dashboard');
 })->middleware('admin');
 
 // Route::get('/operation-enter', function () {
@@ -27,6 +27,8 @@ Route::get('/', function () {
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::prefix('admin')->as('admin.')->middleware(['web', 'auth', 'admin'])->group(function () {
+    Route::get('/dashboard', [App\Http\Controllers\OperationEnterController::class, 'dashboard'])->name('dashboard');
+
     Route::get('/operation-enter', [App\Http\Controllers\OperationEnterController::class, 'operationEnter'])->name('operation-enter');
     
     Route::get('/operation-history', [App\Http\Controllers\OperationEnterController::class, 'operationHistory'])->name('operation-history');

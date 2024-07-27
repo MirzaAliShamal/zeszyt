@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\OperationEnter;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -23,5 +24,7 @@ class UserSeeder extends Seeder
             'form_of_income_taxes' => 'income tax type 1',
             'contact_with_us' => 'contact detail 1'
         ]);
+        
+        OperationEnter::factory()->count(500)->create();
     }
 }
