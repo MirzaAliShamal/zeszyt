@@ -18,6 +18,10 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'password' => Hash::make('admin'),
+            'company_name' => 'comapny 1',
+            'form_of_organization' => 'organization 1',
+            'form_of_income_taxes' => 'income tax type 1',
+            'contact_with_us' => 'contact detail 1'
         ]);
     }
 }
