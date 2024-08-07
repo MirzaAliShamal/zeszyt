@@ -41,6 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::post('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::post('/profile-update-password', [ProfileController::class, 'profileUpdatePassword'])->name('profile.update-password');
+    Route::post('/profile-update-contact', [ProfileController::class, 'profileUpdateContact'])->name('profile.update-contact');
 });
 
 // Catch-all route for unauthorized access
