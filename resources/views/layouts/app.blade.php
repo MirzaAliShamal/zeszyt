@@ -52,7 +52,8 @@
     <!-- General JS Scripts -->
     <script src="{{ asset('assets/js/app.min.js') }}"></script>
     <!-- JS Libraies -->
-    <script src="{{ asset('assets/bundles/apexcharts/apexcharts.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/bundles/apexcharts/apexcharts.min.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- Template JS File -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
     <!-- Custom JS File -->
