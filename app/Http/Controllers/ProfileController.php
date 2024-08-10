@@ -67,7 +67,3 @@ class ProfileController extends Controller
         return redirect()->route('profile.edit');
     }
 }
-
-// hours worked: 175.5+10.28+6.66+9.5 = 201.94
-// overtiming: 1.5+1.28 = 2.78
-// total hours: 192.4 + 2.78 = 204.72
